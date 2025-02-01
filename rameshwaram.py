@@ -1,19 +1,31 @@
-cafe = '''
-          THE RAMESHWARAM CAFE
-          #1 Green Avenue , ITPM Road,
-          Banglore
-          PIN :560037
-          29ABYFA2044B1ZG
+pin_code = int(input("ENTER YOUR PIN CODE: ")) #560037
+cafe_name = "THE RAMESHWARAM CAFE"
+address = "#1 Green Avenue , ITPM Road,"
+city = "Banglore"
+gstin = " 29ABYFA2044B1ZG"
+cust_name = input("CUSTOMER NAME: ")
+t_date = "24/12/24"
+t_time = "20:38"
+token_no = 1107
+c_name = "Devika"
+bill_no = "RC/00413707"
+fssai_no = "11222333001923"
+cafe= f'''
+          {cafe_name}
+          {address}
+          {city}
+          PIN :{pin_code}
+          {gstin}
           
 ----------------------------------------
-NAME
+NAME: {cust_name}
 ----------------------------------------
-Date: 24/12/24   Self Service: SS
-20;38
-Cashier:Devika         Bill No:
-                      RC/00413707
+Date: {t_date}   Self Service: SS
+{t_time}
+Cashier:{c_name}        Bill No:
+                      {bill_no}
 Token No:
-1107
+{token_no}
 ---------------------------------------
 No Item     QTY       Price    Amount
 GHEE PUDI    2         128      256
@@ -27,7 +39,7 @@ TOTAL QTY    5    SUB TOTAL 251 , 464
 ----------------------------------------
              GRAND TOTAL          RS 487
 -----------------------------------------
-FSSAI Lic N0.  11222333001923
+FSSAI Lic N0.  {fssai_no}
            THANK YOU VISIT AGAIN
            
    BEST TO CONSUME THE FOOD WITHIN 4 MINS
